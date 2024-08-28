@@ -17,7 +17,7 @@ Route::get('/auth/github', function () {
 })->name('github.login');
 
 Route::get('/auth/github/callback', function () {
-    $user = Socialite::driver('github')->user();
+    $user = Socialite::driver('github')->stateless()->user();
  
     // $user->token
 });
