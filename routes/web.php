@@ -33,11 +33,11 @@ Route::get('/', [HomeController::class, 'main']);
 
 Route::get('/auth/github', function () {
     dump('calling auth');
-    return Socialite::driver('github')->redirect();
+    return Socialite::driver('github')->stateless()->redirect();
 })->name('github.login');
 
 Route::get('/auth/github/callback', function() {
-    $githubUser = Socialite::driver('github')->user();
+    $githubUser = Socialite::driver('github')->stateless()->user();
 
     $user = User::updateOrCreate([
         'github_id' => $githubUser->id,
