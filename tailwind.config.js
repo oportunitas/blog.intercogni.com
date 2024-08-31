@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
    content: [
-      "./**/*.blade.php",
-      "./**/*.js",
-      "./**/*.vue",
+      ".resources/**/*.blade.php",
+      ".resources/**/*.js",
+      ".resources/**/*.vue",
    ],
+   safelist: [{
+      pattern: /./,
+   }],
    theme: {
       extend: {},
    },
