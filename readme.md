@@ -33,7 +33,7 @@
 ![alt text](public/database_diagram.png)
 
 # 🎥 Demo Video
-[demo video](public/videos/demo_video.webm)
+[demo video](public/videos/demo_video.webm.mov)
 
 # 📸 Screenshots
 
