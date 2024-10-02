@@ -9,6 +9,7 @@
 - [📚 Table of Contents](#-table-of-contents)
 - [✨ Features](#-features)
 - [🗂️ Database/Model Diagram](#️-databasemodel-diagram)
+- [🎥 Demo Video](#-demo-video)
 - [📸 Screenshots](#-screenshots)
 	- [🏠 Home Page Before Login](#-home-page-before-login)
 	- [🔑 GitHub Authentication Screen](#-github-authentication-screen)
@@ -30,6 +31,9 @@
 
 # 🗂️ Database/Model Diagram
 ![alt text](public/database_diagram.png)
+
+# 🎥 Demo Video
+[demo video](public/videos/demo_video.webm)
 
 # 📸 Screenshots
 
