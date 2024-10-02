@@ -8,5 +8,5 @@
 ![alt text](<public/Screenshot 2024-10-02 132743.png>)
 
 # `blog section look`
-![alt text](<public/Screenshot 2024-10-02 132743.png>)
+![alt text](<public/Screenshot 2024-10-02 132751.png>)
 
