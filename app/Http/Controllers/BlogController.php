@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BlogController extends Controller
 {
@@ -57,6 +58,9 @@ class BlogController extends Controller
     public function edit($id)
     {
         $blog = Blog::findOrFail($id);
+        if (Auth::user()->email !== $blog->user_email) {
+            return redirect('/blogs/manage')->withErrors('You are not authorized to edit this blog.');
+        }
         return view('blogs.edit', compact('blog'));
     }
 
@@ -68,6 +72,11 @@ class BlogController extends Controller
         ]);
 
         $blog = Blog::findOrFail($id);
+        
+        if (Auth::user()->email !== $blog->user_email) {
+            return redirect('/blogs/manage')->withErrors('You are not authorized to edit this blog.');
+        }
+
         $blog->title = $request->input('title');
         $blog->body = $request->input('body');
         $blog->save();
